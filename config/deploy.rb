@@ -10,7 +10,7 @@ ssh_options: {
 set :application, 'Jeetanmadaan'
 set :repo_url, 'git@github.com:madajee/JeetanMWebsite.git'
 set :user,        'madajee'
-set :deploy_to, "/home/madajee/tempdeploy"
+set :deploy_to, "/home/madajee/JeetanMWebsite"
 set :scm, :git
 set :branch, "master"
 set :deploy_via, :copy
