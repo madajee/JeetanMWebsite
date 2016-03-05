@@ -1,7 +1,8 @@
+<% provide(:title, "Home") %>
 <!DOCTYPE html>
 <html lang='en-US'>
 <head>
-<title>Jeetan's Website</title>
+<title>Jeetan|<%= yield(:title) %></title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <style type="text/css">
  * {padding: 0; margin: 0;}
@@ -27,9 +28,10 @@
 		<div class="nav">
 			<p><strong>Navigation</strong></p>
 			<ul>
-				<li><a href="one.html">About Me</a></li>
-				<li><a href="two.html">Family</a></li>
-				<li><a href="three.html">Friends</a></li>
+			 <li><%= link_to 'About Me', static_pages_about_path %></li>
+			 <li><a href="two.html">Family</a></li>
+			 <li><a href="three.html">Friends</a></li>
+
 			</ul>
 		</div>
 		<div class="content">
