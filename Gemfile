@@ -46,3 +46,7 @@ group :development do
   gem 'capistrano',         require: false
 end
 
+group :test do
+  gem 'minitest-reporters'
+end
+
