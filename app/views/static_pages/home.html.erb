@@ -1,51 +1,13 @@
 <% provide(:title, "Home") %>
 <!DOCTYPE html>
-<html lang='en-US'>
-<head>
-<title>Jeetan|<%= yield(:title) %></title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<style type="text/css">
- * {padding: 0; margin: 0;}
- a {text-decoration: none;}
- p {padding-left: 10px;}
-  .container{width: 700px; margin-left:auto; margin-right:auto; }
-  .header {background-color: #441111}
-  .header h1 {color: white; line-height: 80px;}
-  .header img {float: left; height: 70px; width: 100px; padding: 5px; margin-right: 20px;}
-  .nav {background-color: #ffdd99; height: 200px; width: 150px; float: left}
-  .nav ul {margin: 15px; list-style-type: none}
-  .content {}
-  .footer {clear:left; background-color: #bb9955}
-</style>
-</head>
+<div class="center jumbotron">
+  <h1>Welcome to the Sample Website</h1>
 
-<body>
-	<div class="container">
-		<div class="header">
-			<img src="JeetRicha.jpg" alt="Jeetan Madaan" />
-			<h1>Jeetan Madaan</h1>
-		</div>
-		<div class="nav">
-			<p><strong>Navigation</strong></p>
-			<ul>
-			 <li><%= link_to 'About Me', static_pages_about_path %></li>
-			 <li><a href="two.html">Family</a></li>
-			 <li><a href="three.html">Friends</a></li>
+  <h2>
+    This is the home page for Sample Website.
+  </h2>
 
-			</ul>
-		</div>
-		<div class="content">
-			<p><strong>Summary</strong></p>
-			<p> 
-			In my 13 years of IT career, I have learned how to integrate systems, helped in solution design, requirement analysis, followed SDLC, Agile approach and ITIL processes to deliver product, platform, services and worked across several industry domains.<br><br>
-			Extensive experience in Oracle Stack including Oracle Fusion Middleware, JD Edwards and programming languages like Java, PL/SQL, BPEL etc <br><br>
-			From last 5 years, I have been working in Telematics domain where I have learned how SOA services, Distributed Computing, Layered Architecture, has been applied to develop telematics products, solutions.
-			</p>
-		</div>
-		<div class="footer">
-			<p>Footer</p>
-		</div>
-	</div>	
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
 
-</body>
-</html>
+<%= link_to image_tag("JeetRicha.jpg", width: '32', height: '32', alt: "Profile Photo") , '#' %>
